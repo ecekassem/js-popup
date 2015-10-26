@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="favicon.png">
+		<title>js-popup demo</title>
+		<style>
+			body
+			{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<script src="popup.min.js"></script>
+	</head>
+<body>
+	<button onclick="pops()">Default pop up!</button>
+	<button onclick="pops(
+	{
+		dirc: 'ltr',
+		wsub: 70,
+		hsub: 100,
+		tsub: 0,
+		xsub: 30,
+		wbox: 50,
+		hbox: 80,
+		ovrl: true,
+		opct: 0.4,
+		htit: 20,
+		tpad: '10px',
+		tbco: '#3399FF',
+		tclr: '#fff',
+		mpad: '5px',
+		mbco: '#eee',
+		mclr: '#000',
+		titl: '<h1>Lorem ipsum</h1>',
+		mesg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet dignissim dui. Donec in sapien malesuada, lobortis libero at, elementum neque. Ut tincidunt eget arcu ut lacinia. Cras convallis venenatis faucibus. Nunc tincidunt, odio sed molestie finibus, purus lectus vehicula nibh, a fermentum lectus eros a dui. Aenean in.'
+	})">Custom pop up</button>
+	<button onclick="pops(
+	{
+		dirc: 'ltr',
+		wsub: 70,
+		hsub: 100,
+		tsub: 0,
+		xsub: 30,
+		wbox: 50,
+		hbox: 80,
+		ovrl: false,
+		opct: 0.4,
+		htit: 20,
+		tpad: '10px',
+		tbco: '#3399FF',
+		tclr: '#fff',
+		mpad: '5px',
+		mbco: '#eee',
+		mclr: '#000',
+		titl: '<h1>Lorem ipsum</h1>',
+		mesg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet dignissim dui. Donec in sapien malesuada, lobortis libero at, elementum neque. Ut tincidunt eget arcu ut lacinia. Cras convallis venenatis faucibus. Nunc tincidunt, odio sed molestie finibus, purus lectus vehicula nibh, a fermentum lectus eros a dui. Aenean in.'
+	})">No overlay</button>
+	<button onclick="pops(
+	{
+		dirc: 'ltr',
+		wsub: 70,
+		hsub: 100,
+		tsub: 0,
+		xsub: 30,
+		wbox: 50,
+		hbox: 90,
+		ovrl: true,
+		opct: 0.4,
+		htit: 0,
+		tpad: '10px',
+		tbco: '#3399FF',
+		tclr: '#fff',
+		mpad: '5px',
+		mbco: '#eee',
+		mclr: '#000',
+		titl: '',
+		mesg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet dignissim dui. Donec in sapien malesuada, lobortis libero at, elementum neque. Ut tincidunt eget arcu ut lacinia. Cras convallis venenatis faucibus. Nunc tincidunt, odio sed molestie finibus, purus lectus vehicula nibh, a fermentum lectus eros a dui. Aenean in.'
+	})">No title</button>
+	<button onclick="pops(
+	{
+		dirc: 'rtl',
+		wsub: 80,
+		hsub: 80,
+		tsub: 10,
+		xsub: 10,
+		wbox: 70,
+		hbox: 70,
+		ovrl: true,
+		opct: 0.4,
+		htit: 20,
+		tpad: '10px',
+		tbco: '#3399FF',
+		tclr: '#fff',
+		mpad: '5px',
+		mbco: '#eee',
+		mclr: '#000',
+		titl: '<h1>معلقة عمرو بن كلثوم</h1>',
+		mesg: 'أَلاَ هُبِّي بِصَحْنِكِ فَاصْبَحِيْنَـا  وَلاَ تُبْقِي خُمُـوْرَ الأَنْدَرِيْنَـا<br>مُشَعْشَعَةً كَأَنَّ الحُصَّ فِيْهَـا  إِذَا مَا المَاءَ خَالَطَهَا سَخِيْنَـا<br>تَجُوْرُ بِذِي اللَّبَانَةِ عَنْ هَـوَاهُ  إِذَا مَا ذَاقَهَـا حَتَّـى يَلِيْنَـا<br>تَرَى اللَّحِزَ الشَّحِيْحَ إِذَا أُمِرَّتْ  عَلَيْـهِ لِمَـالِهِ فِيْهَـا مُهِيْنَـا<br>صَبَنْتِ الكَأْسَ عَنَّا أُمَّ عَمْـرٍو  وَكَانَ الكَأْسُ مَجْرَاهَا اليَمِيْنَـا<br>وَمَا شَـرُّ الثَّـلاَثَةِ أُمَّ عَمْـرٍو  بِصَاحِبِكِ الذِي لاَ تَصْبَحِيْنَـا'
+	})">RTL pop up</button>
+</body>
+</html>
