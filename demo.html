@@ -40,6 +40,8 @@
 		<script src="popup.min.js"></script>
 	</head>
 <body>
+	<fieldset>
+		<legend>Pop up from preset values</legend>
 	<button onclick="pops()">Default pop up!</button>
 	<button onclick="pops(
 	{
@@ -125,5 +127,32 @@
 		titl: '<h1>معلقة عمرو بن كلثوم</h1>',
 		mesg: 'أَلاَ هُبِّي بِصَحْنِكِ فَاصْبَحِيْنَـا  وَلاَ تُبْقِي خُمُـوْرَ الأَنْدَرِيْنَـا<br>مُشَعْشَعَةً كَأَنَّ الحُصَّ فِيْهَـا  إِذَا مَا المَاءَ خَالَطَهَا سَخِيْنَـا<br>تَجُوْرُ بِذِي اللَّبَانَةِ عَنْ هَـوَاهُ  إِذَا مَا ذَاقَهَـا حَتَّـى يَلِيْنَـا<br>تَرَى اللَّحِزَ الشَّحِيْحَ إِذَا أُمِرَّتْ  عَلَيْـهِ لِمَـالِهِ فِيْهَـا مُهِيْنَـا<br>صَبَنْتِ الكَأْسَ عَنَّا أُمَّ عَمْـرٍو  وَكَانَ الكَأْسُ مَجْرَاهَا اليَمِيْنَـا<br>وَمَا شَـرُّ الثَّـلاَثَةِ أُمَّ عَمْـرٍو  بِصَاحِبِكِ الذِي لاَ تَصْبَحِيْنَـا'
 	})">RTL pop up</button>
+	</fieldset>
+	<fieldset>
+		<legend>Pop up from input values</legend><br>
+		<input type="text" id="titl" placeholder="Write the popup title..."><br><br>
+		<input type="text" id="mesg" placeholder="Write the popup message..."><br><br>
+		<button onclick="pops(
+		{
+			dirc: 'ltr',
+			wsub: 80,
+			hsub: 80,
+			tsub: 10,
+			xsub: 10,
+			wbox: 70,
+			hbox: 70,
+			ovrl: true,
+			opct: 0.4,
+			htit: 20,
+			tpad: '10px',
+			tbco: '#3399FF',
+			tclr: '#fff',
+			mpad: '5px',
+			mbco: '#eee',
+			mclr: '#000',
+			titl: document.getElementById('titl').value,
+			mesg: document.getElementById('mesg').value
+		})">Pop up now!</button>
+	</fieldset>
 </body>
 </html>
