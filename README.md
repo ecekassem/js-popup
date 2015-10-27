@@ -25,6 +25,6 @@ tclr: stands for the box title foreground color (ex.: '#ffffff','black', etc.)
 mpad: stands for the box title padding that can take any positive value in pixels (ex.: '15px')
 mbco: stands for the box message background color (ex.: '#eeeeee','grey', etc.)
 mclr: stands for the box message foreground color (ex.: '#000000','blue', etc.)
-titl: stands for the box title contents that can be any valid string or even an html code (ex.: 'My title','<h1>My title</h1>', etc.)
-mesg: stands for the box message contents that can be any valid string or even an html code (ex.: 'My message','<h1>My message</h1>', etc.)
+titl: stands for the box title contents that can be any valid string or even an html code (ex.: 'My title','<tag>My title</tag>', etc.)
+mesg: stands for the box message contents that can be any valid string or even an html code (ex.: 'My message','<tag>My message</tag>', etc.)
 
