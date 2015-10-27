@@ -6,7 +6,7 @@ Above all else, js-popup supports right-to-left "rtl" languages.
 
 <b>Created by: Engineer/Mohamed Ahmed Kassem El Sayed [2015]</b>
 For further queries and support developer@wencoproman.net
-Also, for direct connection call us over <b>+20100 477 86 20</b>
+Also, for direct connection call us over <b>+20100 477 86 20</b><br>
 js-popup is a very light weight function for making a pure
 JavaScript popups, with some customizations, including:<br>
 dirc: stands for the popup direction that can be 'ltr' or 'rtl'<br>
