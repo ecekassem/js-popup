@@ -4,8 +4,8 @@ This function considers the whole window as the main screen, and it is left to t
 The sub-screen concept was not generated to complicate the popup matter but rather for giving the facility to locate the popup box in anywhere within the window boundries (i.e. instead of being poped up only in the center of the screen!).
 Above all else, js-popup supports right-to-left "rtl" languages.
 
-<b>Created by: Engineer/Mohamed Ahmed Kassem El Sayed [2015]</b>
-For further queries and support developer@wencoproman.net
+<b>Created by: Engineer/Mohamed Ahmed Kassem El Sayed &#169;2015</b><br>
+For further queries and support developer@wencoproman.net<br>
 Also, for direct connection call us over <b>+20100 477 86 20</b><br>
 js-popup is a very light weight function for making a pure
 JavaScript popups, with some customizations, including:<br>
