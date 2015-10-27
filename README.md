@@ -25,6 +25,6 @@ JavaScript popups, with some customizations, including:<br>
 <b>mpad:</b> stands for the box title padding that can take any positive value in pixels (ex.: '15px')<br>
 <b>mbco:</b> stands for the box message background color (ex.: '#eeeeee','grey', etc.)<br>
 <b>mclr:</b> stands for the box message foreground color (ex.: '#000000','blue', etc.)<br>
-<b>titl:</b> stands for the box title contents that can be any valid string or even an html code (ex.: 'My title','<tag>My title</tag>', etc.)<br>
-<b>mesg:</b> stands for the box message contents that can be any valid string or even an html code (ex.: 'My message','<tag>My message</tag>', etc.)<br>
+<b>titl:</b> stands for the box title contents that can be any valid string or even an html code (ex.: 'My title','&#60;h1&#62;My title&#60;/h1&#62;', etc.)<br>
+<b>mesg:</b> stands for the box message contents that can be any valid string or even an html code (ex.: 'My message','&#60;p&#62;My message&#60;/p&#62;', etc.)<br>
 
