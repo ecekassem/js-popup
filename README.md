@@ -28,5 +28,5 @@ JavaScript popups, with some customizations, including:<br>
 <b>titl:</b> stands for the box title contents that can be any valid string or even an html code (ex.: 'My title','&#60;h1&#62;My title&#60;/h1&#62;', etc.)<br>
 <b>mesg:</b> stands for the box message contents that can be any valid string or even an html code (ex.: 'My message','&#60;p&#62;My message&#60;/p&#62;', etc.)<br>
 <b>time:</b> stands for the time of animation in milli-seconds 0 means no animation<br>
-<b>anim:</b> stands for animation with restricted values like 'tl' which means TOP-LEFT i.e. start animating from the top-left corners
+<b>anim:</b> stands for animation with restricted values like 'tl' which means TOP-LEFT i.e. start animating from the top-left corner
 <b>refr:</b> stands for refresh if true the parent window will be refreshed after closing the popup box
