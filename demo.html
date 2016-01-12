@@ -51,6 +51,16 @@
 			{
 				width: 165px;
 			}
+			optgroup
+			{
+				background-color: #CCCCCC;
+				color: #00f;
+			}
+			optgroup option
+			{
+				background-color: #fff;
+				color: #000;
+			}
 		</style>
 		<script src="popup.min.js"></script>
 	</head>
@@ -175,7 +185,7 @@
 			<tr><th>Direction</th><td>
 			<select id="dirc" name="dirc"><option value="ltr">Left to right</option><option value="rtl">Right to left</option></select></td></tr>
 			<tr><th>Duration</th><td><input id="time" type="number" value="1000" placeholder="Time"> milli-seconds</td></tr>
-			<tr><th>Animation</th><td><select id="anim" name="anim"><option value="tl">Top left</option><option value="tr">Top right</option><option value="br">Bottom right</option><option value="bl">Bottom left</option><option value="cc">Center</option><option value="impulse">Impulse</option><option value="dc">DC</option><option value="ts">Top side</option><option value="rs">Right side</option><option value="bs">Bottom side</option><option value="ls">Left side</option></select></td></tr>
+			<tr><th>Animation</th><td><select id="anim" name="anim"><optgroup label="Corners"><option value="tl">Top left</option><option value="tr">Top right</option><option value="br">Bottom right</option><option value="bl">Bottom left</option></optgroup><optgroup label="Center"><option value="cc">Center</option><option value="impulse">Impulse</option><option value="dc">DC</option></optgroup><optgroup label="Sides"><option value="ts">Top side</option><option value="rs">Right side</option><option value="bs">Bottom side</option><option value="ls">Left side</option></optgroup></select></td></tr>
 		</table>
 		<br>
 		<button onclick="pops(
