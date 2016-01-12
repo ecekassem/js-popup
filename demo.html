@@ -23,6 +23,9 @@
 	mclr: stands for the box message foreground color (ex.: '#000000','blue', etc.)
 	titl: stands for the box title contents that can be any valid string or even an html code (ex.: 'My title','<h1>My title</h1>', etc.)
 	mesg: stands for the box message contents that can be any valid string or even an html code (ex.: 'My message','<h1>My message</h1>', etc.)
+	time: stands for the time of animation in milli-seconds 0 means no animation
+	anim: stands for animation with restricted values like 'tl' which means TOP-LEFT i.e. start animating from the top-left corners
+	refr: stands for refresh if true the parent window will be refreshed after closing the popup box 
 -->
 <!DOCTYPE html>
 <html>
@@ -35,6 +38,18 @@
 			{
 				margin: 0;
 				padding: 0;
+			}
+			input,select,button
+			{
+				padding: 5px;
+			}
+			input,select
+			{
+				width: 150px;
+			}
+			select
+			{
+				width: 165px;
 			}
 		</style>
 		<script src="popup.min.js"></script>
@@ -152,6 +167,39 @@
 			mclr: '#000',
 			titl: document.getElementById('titl').value,
 			mesg: document.getElementById('mesg').value
+		})">Pop up now!</button>
+	</fieldset>
+	<fieldset>
+		<legend>Pop up with entrance animation</legend><br>
+		<table>
+			<tr><th>Direction</th><td>
+			<select id="dirc" name="dirc"><option value="ltr">Left to right</option><option value="rtl">Right to left</option></select></td></tr>
+			<tr><th>Duration</th><td><input id="time" type="number" value="1000" placeholder="Time"> milli-seconds</td></tr>
+			<tr><th>Animation</th><td><select id="anim" name="anim"><option value="tl">Top left</option><option value="tr">Top right</option><option value="br">Bottom right</option><option value="bl">Bottom left</option><option value="cc">Center</option><option value="impulse">Impulse</option><option value="dc">DC</option><option value="ts">Top side</option><option value="rs">Right side</option><option value="bs">Bottom side</option><option value="ls">Left side</option></select></td></tr>
+		</table>
+		<br>
+		<button onclick="pops(
+		{
+			dirc: document.getElementById('dirc').value,
+			wsub: 80,
+			hsub: 80,
+			tsub: 10,
+			xsub: 10,
+			wbox: 80,
+			hbox: 80,
+			ovrl: true,
+			opct: 0.4,
+			htit: 20,
+			tpad: '10px',
+			tbco: '#3399FF',
+			tclr: '#fff',
+			mpad: '5px',
+			mbco: '#eee',
+			mclr: '#000',
+			titl: '<h1>Lorem ipsum</h1>',
+			mesg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet dignissim dui. Donec in sapien malesuada, lobortis libero at, elementum neque. Ut tincidunt eget arcu ut lacinia. Cras convallis venenatis faucibus. Nunc tincidunt, odio sed molestie finibus, purus lectus vehicula nibh, a fermentum lectus eros a dui. Aenean in.',
+			time: document.getElementById('time').value,
+			anim: document.getElementById('anim').value
 		})">Pop up now!</button>
 	</fieldset>
 </body>
